@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>assign_re-assign_popup</title>
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <!-- css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade assign-reassign-popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <form action="">
+        <div class="modal-header">
+          <h5 class="modal-title font_20 fontWeight_500" id="exampleModalLabel">Assign Asset</h5>
+          <div class="close-popup mx-2" data-dismiss="modal">
+            <img src="./assets/images/close-popup.png" alt="close-popup">
+          </div>
+        </div>
+        <div class="modal-body">
+            <div class="view-inner-row bg-white row">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6 view-inner-row-inner">
+                    <div class="title">
+                        <label class="fontWeight_500 font_18">Code</label>
+                    </div>
+                    <div class="content status-content">
+                        <p class="font_18">CIPL-ATC00151</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6  col-xs-6 col-6 view-inner-row-inner">
+                    <div class="title">
+                        <label class="fontWeight_500 font_18">Asset Type</label>
+                    </div>
+                    <div class="content">
+                        <p class="font_18">CPU</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6  col-xs-6 col-6 view-inner-row-inner">
+                    <div class="title">
+                        <label class="fontWeight_500 font_18">Brand</label>
+                    </div>
+                    <div class="content">
+                        <p class=" font_18">HP</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6  col-xs-6 col-6 view-inner-row-inner">
+                    <div class="title">
+                        <label class="fontWeight_500 font_18">Model No.</label>
+                    </div>
+                    <div class="content">
+                        <p class=" font_18">HP 20-r010il</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6  col-xs-6 col-6 view-inner-row-inner">
+                    <div class="title">
+                        <label class="fontWeight_500 font_18">Serial No.</label>
+                    </div>
+                    <div class="content">
+                        <p class=" font_18">7C265446Q </p>
+                    </div>
+                </div> 
+            </div>
+            <div class="row mid-row bg-white">
+                <div class="col-xl-4 col-lg-4 col-md-6  col-12">
+                    <div class="form-group">
+                        <label for="asset" class="font_16">7C265446Q</label><span class="required">*</span>
+                        <div class="custom_select">
+                            <select name="asset" id="asset" placeholder="Select Location">
+                               <option value="Select Location">Select Emp ID Number</option>
+                                <option value="External">location 1</option>
+                                <option value="Internal">location 2</option>
+                            </select>
+                        </div>  
+                        <label for="property" class="error-text"><span class="mr-2"><img src="./assets/images/error.png" alt="error"></span> Error Invalid Text</label>  
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6  col-12">
+                    <div class="form-group">
+                        <label for="asset" class="font_16">Assign To</label><span class="required">*</span>
+                        <div class="custom_select">
+                            <select name="asset" id="asset">
+                                <option value="Internal">Select Emp Name</option>
+                                <option value="External">1</option>
+                                <option value="Internal">2</option>
+                            </select>
+                        </div>  
+                        <label for="property" class="error-text"><span class="mr-2"><img src="./assets/images/error.png" alt="error"></span> Error Invalid Text</label>  
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6  col-12">
+                    <div class="form-group">
+                        <label for="asset" class="font_16">Department</label><span class="required">*</span>
+                        <div class="custom_select">
+                            <select name="asset" id="asset">
+                                <option value="Internal">Select Department</option>
+                                <option value="External">1</option>
+                                <option value="Internal">2</option>
+                            </select>
+                        </div>  
+                        <label for="property" class="error-text"><span class="mr-2"><img src="./assets/images/error.png" alt="error"></span> Error Invalid Text</label>  
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6  col-12">
+                    <div class="form-group">
+                        <label for="asset" class="font_16">Condition</label><span class="required">*</span>
+                        <div class="custom_select">
+                            <select name="asset" id="asset">
+                                <option value="Internal">Select Condition</option>
+                                <option value="External">1</option>
+                                <option value="Internal">2</option>
+                            </select>
+                        </div> 
+                        <label for="property" class="error-text"><span class="mr-2"><img src="./assets/images/error.png" alt="error"></span> Error Invalid Text</label>   
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6  col-12">
+                    <div class="form-group">
+                        <label for="asset" class="font_16">Machine Status</label><span class="required">*</span>
+                        <div class="custom_select">
+                            <select name="asset" id="asset">
+                                <option value="Internal">Select Machine Status</option>
+                                <option value="External">1</option>
+                                <option value="Internal">2</option>
+                            </select>
+                        </div> 
+                        <label for="property" class="error-text"><span class="mr-2"><img src="./assets/images/error.png" alt="error"></span> Error Invalid Text</label>   
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6  col-12">
+                    <div class="form-group">
+                        <label for="asset" class="font_16">Location</label><span class="required">*</span>
+                        <div class="custom_select">
+                            <select name="asset" id="asset">
+                                <option value="Internal">Select Location</option>
+                                <option value="External">1</option>
+                                <option value="Internal">2</option>
+                            </select>
+                        </div> 
+                        <label for="property" class="error-text"><span class="mr-2"><img src="./assets/images/error.png" alt="error"></span> Error Invalid Text</label>   
+                    </div>
+                </div>    
+            </div>
+            <div class="row bg-white comment-row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div class="form-group form-group-textarea">
+                        <label for="comment" class="font_16">Comments</label>
+                        <label for="comment" class="max-letters-textarea">(Max 160 Characters) Characters Left: 160</label>
+                        <div class="custom-textarea">
+                            <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Write Your Comments"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <div class="row bottom-row bg-white">
+                <div class="buttons d-flex">
+                    <div class="cancel m-1">
+                        <button class="btn fontWeight_500 font_18" data-dismiss="modal">Cancel</button>
+                    </div>
+                    <div class="add m-1">
+                        <input type="submit" class="btn fontWeight_500 font_18" value="Assign"></input>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <!-- js -->
+  <script src="./assets/js/custom.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <!-- <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/slim.min.js"></script> -->
+
+</body>
+
+</html>
